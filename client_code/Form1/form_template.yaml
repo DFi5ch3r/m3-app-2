@@ -30,3 +30,4 @@ components:
     properties: {text: plots}
     type: Link
     layout_properties: {grid_position: 'YPKLBH,UIFHXZ'}
+    event_bindings: {click: link_3_click}

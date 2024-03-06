@@ -1,6 +1,7 @@
 from ._anvil_designer import Form1Template
 from anvil import *
-from ..Form2 import Form2
+import anvil.server
+from ..plots import plots
 
 class Form1(Form1Template):
   def __init__(self, **properties):
@@ -14,10 +15,9 @@ class Form1(Form1Template):
       link.role = ''
       
 
-
-  def link_1_click(self, **event_args):
+  def link_3_click(self, **event_args):
     """This method is called when the link is clicked"""
     self.content_panel.clear()
-    self.content_panel.add_component(Form2())
+    self.content_panel.add_component(plots())
     self.deselect_all_links()
-    self.link_1.role = 'selected'
+    self.link_3.role = 'selected'
