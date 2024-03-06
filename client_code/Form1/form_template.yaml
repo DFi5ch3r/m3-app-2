@@ -12,3 +12,21 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {slot: left-nav}
+  components:
+  - name: link_1
+    properties: {text: data}
+    type: Link
+    layout_properties: {grid_position: 'ULGNPL,HDYWYS'}
+    event_bindings: {click: link_1_click}
+  - name: link_2
+    properties: {text: controls}
+    type: Link
+    layout_properties: {grid_position: 'HBLVLT,LRZZEG'}
+  - name: link_3
+    properties: {text: plots}
+    type: Link
+    layout_properties: {grid_position: 'YPKLBH,UIFHXZ'}
